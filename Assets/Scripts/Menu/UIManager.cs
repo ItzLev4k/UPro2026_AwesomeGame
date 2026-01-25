@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
         _panelChoose.SetActive(true);
     }
 
-    private void Quit()
+    public void Quit()
     {
         Application.Quit();
     }
