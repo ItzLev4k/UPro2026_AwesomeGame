@@ -33,8 +33,8 @@ public class PanelDescription : MonoBehaviour
     private void SetBackground(PanelDescription panel)
     {
         if (panel == this)
-            transform.GetComponent<Image>().color = new Color(0.1098039f, 0.2589324f, 0.3921569f, 1);
+            transform.GetComponent<Image>().color = new Color(0.5943396f, 0.5943396f, 0.4065059f, 1);
         else
-            transform.GetComponent<Image>().color = new Color(0.4567818f, 0.6228967f, 0.8584906f, 1);
+            transform.GetComponent<Image>().color = new Color(0.7924528f, 0.7912701f, 0.6242435f, 1);
     }
 }

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: -660206707, guid: 6bb4c9c98563ff245bdfe8769cd6b9f8, type: 3}
   _baseWapon: {fileID: 166368951, guid: e440f189f5742d04684d1e01f14ecce9, type: 3}
-  _description: 
+  _description: "\u043F\u0430\u043B\u0430\u0447"
   _prefabWeapon: {fileID: 11400000, guid: f5fa15c71bc20324c862eb29748e3ea6, type: 2}
   _maxHP: 25
