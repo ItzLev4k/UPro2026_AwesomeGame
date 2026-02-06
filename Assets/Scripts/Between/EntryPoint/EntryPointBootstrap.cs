@@ -15,7 +15,7 @@ public class EntryPointBootstrap : MonoBehaviour
     private IEnumerator AnimAndLoadScene()
     {
         text.DOColor(new Color(1, 1, 1, 1), 2f);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.5f);
 
         yield return Load.Instance.LoadScene(1);
     }
