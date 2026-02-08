@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EntryPointGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject _prefabCharacter;
+    [SerializeField]
+    private CameraMove _camera;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        GameObject character = Instantiate(_prefabCharacter, Vector3.zero, Quaternion.identity);
+        character.GetComponent<CharacterMove>().Init();
+
+        _camera.Init(character.transform);
     }
 }
