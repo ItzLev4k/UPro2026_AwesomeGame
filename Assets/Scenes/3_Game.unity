@@ -222,8 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 0.125
-  minBounds: {x: -17, y: -10}
-  maxBounds: {x: 16, y: 9}
+  minBounds: {x: -14, y: -10}
+  maxBounds: {x: 15, y: 9}
 --- !u!1 &419964190
 GameObject:
   m_ObjectHideFlags: 0
@@ -14580,6 +14580,7 @@ GameObject:
   - component: {fileID: 1934821720}
   - component: {fileID: 1934821722}
   - component: {fileID: 1934821721}
+  - component: {fileID: 1934821723}
   m_Layer: 0
   m_Name: CollisionBlocks
   m_TagString: Untagged
@@ -14689,6 +14690,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1934821723
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934821719}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
 --- !u!1 &1966467849
 GameObject:
   m_ObjectHideFlags: 0

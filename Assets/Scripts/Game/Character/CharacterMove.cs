@@ -22,9 +22,9 @@ public class CharacterMove : MonoBehaviour
         EventBus.OnPositionCharacter += GetPositionCharacter;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        _rb.AddForce(inputActions.CharacterControls.Move.ReadValue<Vector2>() * 5);
+        _rb.AddForce(inputActions.CharacterControls.Move.ReadValue<Vector2>() * EventBus.FOnSpeedCharacter.Invoke(0));
     }
 
     private Vector2 GetPositionCharacter(byte b)

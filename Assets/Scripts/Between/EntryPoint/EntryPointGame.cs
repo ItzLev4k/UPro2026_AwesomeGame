@@ -10,7 +10,7 @@ public class EntryPointGame : MonoBehaviour
     private void Start()
     {
         GameObject character = Instantiate(_prefabCharacter, Vector3.zero, Quaternion.identity);
-        character.GetComponent<CharacterMove>().Init();
+        character.GetComponent<CharacterInit>().Init();
 
         _camera.Init(character.transform);
     }
