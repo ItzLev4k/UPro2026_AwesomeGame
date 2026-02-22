@@ -74,7 +74,7 @@ public class CharacterSettings : MonoBehaviour
 
     private float GetTSW(byte arg)
     {
-        return _addTimeDurationWeapon;
+        return _addTimeSpeedWeapon;
     }
 
     private float GetTDW(byte arg)

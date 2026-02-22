@@ -14486,6 +14486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1287867427}
   - component: {fileID: 1287867426}
+  - component: {fileID: 1287867428}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -14507,6 +14508,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabCharacter: {fileID: 5757505640693490201, guid: 5969dd70350a15b449249ccb2afea2f3, type: 3}
   _camera: {fileID: 71901090}
+  _prefabWeapon: {fileID: 5272275593490041511, guid: 0e13160c8285e28439e0edf888d49c6c, type: 3}
+  _weaponManager: {fileID: 1287867428}
 --- !u!4 &1287867427
 Transform:
   m_ObjectHideFlags: 0
@@ -14522,6 +14525,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287867428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287867425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15928a31b4b290c4b8f2a8d4a769d021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabWeapon: {fileID: 5272275593490041511, guid: 0e13160c8285e28439e0edf888d49c6c, type: 3}
 --- !u!1 &1755299512
 GameObject:
   m_ObjectHideFlags: 0
