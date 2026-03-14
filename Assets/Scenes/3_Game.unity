@@ -15585,6 +15585,7 @@ GameObject:
   - component: {fileID: 1287867427}
   - component: {fileID: 1287867426}
   - component: {fileID: 1287867428}
+  - component: {fileID: 1287867429}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -15636,6 +15637,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabWeapon: {fileID: 5272275593490041511, guid: 0e13160c8285e28439e0edf888d49c6c, type: 3}
+--- !u!114 &1287867429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287867425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a071eef666fc3f46a2a324469eded11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabEnemy: {fileID: 4866139872434507067, guid: d2c772ee3e422e94f9c3987ed4c88d72, type: 3}
+  _waves:
+  - {fileID: 11400000, guid: c8cd38c28e1b94f4a94a22eef58e939d, type: 2}
+  - {fileID: 11400000, guid: ffdb5eadcd64ed84fb00ece20608586e, type: 2}
+  - {fileID: 11400000, guid: 61e849fa54968294db2fab73be5ca5c9, type: 2}
+  - {fileID: 11400000, guid: 48c8924fcc786ca4fbcb405d92a78c99, type: 2}
+  _currentWave: 0
 --- !u!1 &1346350630
 GameObject:
   m_ObjectHideFlags: 0

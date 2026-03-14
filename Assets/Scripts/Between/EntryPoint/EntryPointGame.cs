@@ -23,5 +23,7 @@ public class EntryPointGame : MonoBehaviour
         _weaponManager.Init(character);
 
         EventBus.OnAddWeapon?.Invoke(SaveCharacter.Instance.CurrentCharacter.PrefabWeapon);
+
+        GetComponent<ControllWaves>().StartWaves();
     }
 }
