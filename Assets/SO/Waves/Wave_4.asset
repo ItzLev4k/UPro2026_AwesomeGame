@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b408c00d4e049584f8b7c0b0bf9b958f, type: 3}
   m_Name: Wave_4
   m_EditorClassIdentifier: 
-  _duration: 0
-  _timeBetweenSpawn: 0
-  _enemies: []
+  _duration: 58
+  _timeBetweenSpawn: 5
+  _enemies:
+  - {fileID: 11400000, guid: a274d191edaaecd4886ae70970aba46a, type: 2}
+  - {fileID: 11400000, guid: a2467b7dbedf11946b81a79ee4e5cf7d, type: 2}
+  - {fileID: 11400000, guid: 9c12dd80324d2224f9ec03d1dc37f9ad, type: 2}

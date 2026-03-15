@@ -22,6 +22,7 @@ public class CharacterSettings : MonoBehaviour
         EventBus.AOnAddTimeDurationWeapon += AddTDW;
         EventBus.AOnAddTimeSpeedWeapon += AddTSW;
         EventBus.AOnAddTimeCreateEnemies += AddTCE;
+        EventBus.AOnAddHP += AddHP;
 
         EventBus.AOnSubHPCharacter += SetHp;
         EventBus.FOnGetHPCharacter += GetHP;
@@ -65,6 +66,11 @@ public class CharacterSettings : MonoBehaviour
     private void AddSpeed(float obj)
     {
         _speedCharacter += 0.1f;
+    }
+
+    private void AddHP(float obj)
+    {
+        _hp += 0.1f;
     }
 
     private float GetTCE(byte arg)

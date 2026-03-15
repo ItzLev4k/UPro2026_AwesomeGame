@@ -16,4 +16,4 @@ MonoBehaviour:
   _baseWapon: {fileID: -2083653061, guid: e440f189f5742d04684d1e01f14ecce9, type: 3}
   _description: "\u0432\u043E\u0438\u043D"
   _prefabWeapon: {fileID: 11400000, guid: 827bf22df5efc8e43a30043d0fafdfec, type: 2}
-  _maxHP: 25
+  _maxHP: 4865485
