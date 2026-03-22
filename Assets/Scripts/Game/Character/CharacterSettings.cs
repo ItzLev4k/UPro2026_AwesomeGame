@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using YG;
 
 public class CharacterSettings : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class CharacterSettings : MonoBehaviour
         EventBus.AOnSubHPCharacter += SetHp;
         EventBus.FOnGetHPCharacter += GetHP;
         _hp = HP;
+
+        YG2.onCloseInterAdv += LoadMenu;
     }
 
     private void AddTCE(float obj)
@@ -49,7 +52,14 @@ public class CharacterSettings : MonoBehaviour
         _hp -= damage;
 
         if (_hp <= 0)
-            StartCoroutine(LoadScene());
+            if (YG2.isTimerAdvCompleted)
+                YG2.InterstitialAdvShow();
+            else LoadMenu();
+    }
+
+    private void LoadMenu()
+    {
+        StartCoroutine(LoadScene());
     }
 
     private IEnumerator LoadScene()
@@ -108,5 +118,6 @@ public class CharacterSettings : MonoBehaviour
 
         EventBus.AOnSubHPCharacter -= SetHp;
         EventBus.FOnGetHPCharacter -= GetHP;
+        YG2.onCloseInterAdv -= LoadMenu;
     }
 }
